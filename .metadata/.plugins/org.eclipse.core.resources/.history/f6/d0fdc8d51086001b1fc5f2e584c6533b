@@ -1,0 +1,7 @@
+package com.myapp.oops.ocp;
+
+public interface LoanValidator {
+	
+	public abstract boolean isValid(double bankBalance);
+
+}

@@ -1,0 +1,11 @@
+package com.myapp.oops.liskov;
+
+public class ServiceLevelAgreement {
+	
+	private double minUptimePercent;
+	private double problemResolutionTimeDays;
+	
+	
+	
+
+}

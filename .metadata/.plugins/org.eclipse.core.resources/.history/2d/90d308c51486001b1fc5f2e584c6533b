@@ -1,0 +1,20 @@
+package com.myapp.oops.ocp;
+
+public class LoanRequestHandler {
+	
+	private double bankBalance;
+	
+	public LoanRequestHandler(double bankBalance) {
+		this.bankBalance = bankBalance;
+	}
+	
+	public String approveLoan(LoanValidator validator) {
+		if(validator.isValid(bankBalance)) {
+			return "APROOVED";
+		}
+		else
+			return "REJECTED";
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.myapp.oops;
+
+public abstract class Shape {
+
+}

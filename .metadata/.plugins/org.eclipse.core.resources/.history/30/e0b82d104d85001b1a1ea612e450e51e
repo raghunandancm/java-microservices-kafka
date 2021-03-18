@@ -1,0 +1,16 @@
+package com.myapp.oops.main;
+
+import com.myapp.oops.Shape;
+
+public class TestAbstraction {
+	
+	public static void display(Shape shape) {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

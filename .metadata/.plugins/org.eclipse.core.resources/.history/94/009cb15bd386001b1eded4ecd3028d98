@@ -1,0 +1,10 @@
+package com.myapp.oops.liskov;
+
+public abstract class Employee {
+	
+	private String firstName;
+	private String lastName;
+	private double monthlyIncome;
+	private int nbHoursPerWeek;
+
+}

@@ -1,0 +1,16 @@
+package com.myapp.oops.main;
+
+import com.myapp.oops.Shape;
+
+public class TestAbstraction {
+	
+	public static void display(Shape shape) {
+		System.out.println("Area "+shape.calculateArea());
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

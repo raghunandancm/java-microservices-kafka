@@ -1,0 +1,29 @@
+package com.myapp.oops.main;
+
+import com.myapp.oops.ocp.BuisnessLoanValidator;
+import com.myapp.oops.ocp.LoanRequestHandler;
+import com.myapp.oops.ocp.LoanValidator;
+import com.myapp.oops.ocp.PersonalLoanValidator;
+
+
+
+
+public class TestOCP {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		LoanValidator personalLoanValidator = new PersonalLoanValidator();
+		
+		LoanValidator businessLoanValidator = new BuisnessLoanValidator();
+		
+		LoanRequestHandler handler = new LoanRequestHandler(66500.4);
+		
+		String status = handler.approveLoan(businessLoanValidator);
+		System.out.println("Loan Status  "+status);
+		
+		
+	}
+
+}

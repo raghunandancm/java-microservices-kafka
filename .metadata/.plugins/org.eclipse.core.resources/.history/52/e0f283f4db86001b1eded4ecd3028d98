@@ -1,0 +1,5 @@
+package com.myapp.oops.liskov;
+
+public class ServiceLevelAgreement {
+
+}
