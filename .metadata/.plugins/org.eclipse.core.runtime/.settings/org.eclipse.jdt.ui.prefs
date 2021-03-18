@@ -1,9 +1,0 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.myapp.oops.Shape"><rhs name\="com.myapp.oops.Triangle"/></lhs><lhs name\="com.myapp.oops.ocp.LoanValidator"><rhs name\="com.myapp.oops.ocp.PersonalLoanValidator"/></lhs><lhs name\="com.myapp.oops.ocp.LoanRequestHandler"><rhs name\="com.myapp.oops.ocp.LoanRequestHandler"/></lhs><lhs name\="com.myapp.oops.liskov.Employee"><rhs name\="com.myapp.oops.liskov.PartTimeEmployee"/><rhs name\="com.myapp.oops.liskov.FullTimeEmployee"/></lhs><lhs name\="com.myapp.oops.liskov.Subcontractor"><rhs name\="com.myapp.oops.liskov.Subcontractor"/></lhs><lhs name\="com.myapp.oops.liskov.ServiceLevelAgreement"><rhs name\="com.myapp.oops.liskov.ServiceLevelAgreement"/></lhs></history>
-content_assist_number_of_computers=17
-content_assist_proposals_background=255,255,255
-content_assist_proposals_foreground=0,0,0
-eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=20
-spelling_locale_initialized=true
-useAnnotationsPrefPage=true
-useQuickDiffPrefPage=true

@@ -1,9 +1,0 @@
-package com.myapp.oops.liskov;
-
-public class Subcontractor {
-	
-	private final double monthlyIncome;
-	private double nbHoursPerWeek;
-	private String email,name;
-
-}
