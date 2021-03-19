@@ -17,6 +17,10 @@ public class TestISP {
 		EmployeeRepository repository = new EmployeeRepository();
 		List<Employee> employees= repository.findAll();
 		
+		
+		
+		
+		
 		for(Employee employee:employees) {
 			PaySlip payslip = new PaySlip(employee, Month.FEBRUARY);
 		String exportableText=	payslip.toTxt().toUpperCase();
