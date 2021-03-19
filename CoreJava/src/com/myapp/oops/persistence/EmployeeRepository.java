@@ -25,7 +25,7 @@ public class EmployeeRepository {
 public List<Employee> findAll(){
 	Employee ramdev=new FullTimeEmployee("Ram Dev", 560000.00);
 	Employee shamverma=new PartTimeEmployee("Sham Verma", 250000.00);
-	Employee bheemsen=new Interns("Bheem Sen",50000.00,25);
+	Employee bheemsen=new Interns("Bheem Sen",50000.00,45);
 	List<Employee> list=Arrays.asList(ramdev,shamverma,bheemsen);
 	return list;
 	
