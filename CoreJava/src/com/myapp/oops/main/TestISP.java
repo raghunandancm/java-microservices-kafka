@@ -21,6 +21,12 @@ public class TestISP {
 		String exportableText=	payslip.toTxt().toUpperCase();
 		System.out.println(exportableText);
 		}
+		
+		try {
+			
+		}catch (NullPointerException | ArrayIndexOutOfBoundsException e) {
+			// TODO: handle exception
+		}
 
 	}
 
