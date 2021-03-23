@@ -16,7 +16,14 @@ public class ApplicationEntryPoint {
 		AbstractApplicationContext container = 
 				new AnnotationConfigApplicationContext(AppConfig.class);
 		
-		ProductRepository repository = container.getBean(ProductRepository.class);
+		ProductRepository repository = container.getBean("impl2",ProductRepository.class);
+		
+		
+		ProductRepository repository1 = container.getBean("impl2",ProductRepository.class);
+		
+		
+		System.out.println(repository == repository1);
+		
 		
 		//repository.findAll().forEach(System.out::println);
 		

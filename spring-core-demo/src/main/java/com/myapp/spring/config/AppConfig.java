@@ -17,8 +17,8 @@ import com.myapp.spring.model.Product;
 @ComponentScan(basePackages = "com.myapp.spring")
 public class AppConfig {
 	
-	@Bean
-	public Map<Integer, Product> map(){
+	@Bean()
+	public Map<Integer, Product> map2(){
 		
 		Map<Integer, Product> map = new HashMap<>();
 		
@@ -31,5 +31,21 @@ public class AppConfig {
 		return map;
 		
 	}
+	
+//	@Bean("map3")
+//	public Map<Integer, Product> map1(){
+//		
+//		Map<Integer, Product> map = new HashMap<>();
+//		
+//		map.put(1, new Product(1, "oneplus", 56543.50, "OneplusPro8", 4.5));
+//		
+//		map.put(4, new Product(4, "samsunggalaxy", 76543.50, "galaxynote", 4.2));
+//		
+//		map.put(5, new Product(1, "lenovo", 76543.50, "lenovoyoga", 4.7));
+//		
+//		return map;
+//		
+//	}
+
 
 }
