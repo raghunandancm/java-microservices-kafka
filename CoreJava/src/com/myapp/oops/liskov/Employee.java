@@ -58,6 +58,21 @@ public abstract class Employee {
 		}
 		this.nbHoursPerWeek = nbHoursPerWeek;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Employee [firstName=");
+		builder.append(firstName);
+		builder.append(", lastName=");
+		builder.append(lastName);
+		builder.append(", monthlyIncome=");
+		builder.append(monthlyIncome);
+		builder.append(", nbHoursPerWeek=");
+		builder.append(nbHoursPerWeek);
+		builder.append("]");
+		return builder.toString();
+	}
 	
 	
 	
