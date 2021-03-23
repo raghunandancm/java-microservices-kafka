@@ -1,8 +1,12 @@
 package com.myapp.spring.repository;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,8 +23,8 @@ import com.myapp.spring.model.Product;
 // @Repository, @Service, @Controller, @RestController, @Component, @Configuration
 
 @Repository("impl2")
-@Scope("prototype")
-public class ProductRepositoryImpl2 implements ProductRepository {
+//@Scope("prototype")
+public final class ProductRepositoryImpl2 implements ProductRepository {
 	
 	// Dependency Injection
 	
@@ -29,11 +33,26 @@ public class ProductRepositoryImpl2 implements ProductRepository {
 	@Qualifier("map2")
 	private Map<Integer, Product> map1;
 	
+	
+	@PostConstruct
+	public void intialize() {
+		System.out.println("Inside Initialize");
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		System.out.println("Inside Destroy");
+	}
 
 	@Override
 	public void add(Product product) {
 		// TODO Auto-generated method stub
+//		Principal principal =null;
+//		String role=principal.getName();
+//		if(role.equals("admin")) {
+		
 		map1.put(product.getProductId(), product);
+		//}
 
 	}
 
@@ -45,6 +64,7 @@ public class ProductRepositoryImpl2 implements ProductRepository {
 
 	@Override
 	public List<Product> searchByName(String productName) {
+		
 		// TODO Auto-generated method stub
 		return map1.values().stream()
 				.filter(p->p.getProductName().equalsIgnoreCase(productName)).collect(Collectors.toList());
@@ -53,10 +73,13 @@ public class ProductRepositoryImpl2 implements ProductRepository {
 	@Override
 	public void delete(int productId) {
 		// TODO Auto-generated method stub
-		
+//		Principal principal =null;
+//		String role=principal.getName();
+//		if(role.equals("admin")) {
 		map1.remove(productId);
+		}
 		
 
-	}
+	//}
 
 }

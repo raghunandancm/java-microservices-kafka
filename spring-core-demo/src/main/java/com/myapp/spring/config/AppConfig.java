@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import com.myapp.spring.model.Product;
 
@@ -15,6 +16,11 @@ import com.myapp.spring.model.Product;
 
 @Configuration
 @ComponentScan(basePackages = "com.myapp.spring")
+
+// This enables proxy object creation
+
+
+@EnableAspectJAutoProxy
 public class AppConfig {
 	
 	@Bean()
