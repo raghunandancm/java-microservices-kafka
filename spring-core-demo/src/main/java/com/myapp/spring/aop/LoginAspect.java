@@ -13,6 +13,8 @@ public class LoginAspect {
 	private LoginManagerBean loginManagerBean;
 	
 	// PointCut Expression Language
+	
+	// JoinPoints (@Before,@After, @AfterReturning, @AfterThrowing, @Around)
 	@Before("execution (* com.myapp.spring.repository.*.*(..))")
 	public void authorize() {
 		

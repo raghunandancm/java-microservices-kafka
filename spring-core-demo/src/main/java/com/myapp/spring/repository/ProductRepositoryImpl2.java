@@ -24,16 +24,21 @@ import com.myapp.spring.model.Product;
 
 @Repository("impl2")
 //@Scope("prototype")
-public final class ProductRepositoryImpl2 implements ProductRepository {
+public  class ProductRepositoryImpl2 implements ProductRepository {
 	
 	// Dependency Injection
 	
 	
-	@Autowired
-	@Qualifier("map2")
+	
 	private Map<Integer, Product> map1;
 	
 	
+	
+	@Autowired
+	public ProductRepositoryImpl2(@Qualifier("map2") Map<Integer, Product> map1) {
+		this.map1 = map1;
+	}
+
 	@PostConstruct
 	public void intialize() {
 		System.out.println("Inside Initialize");
