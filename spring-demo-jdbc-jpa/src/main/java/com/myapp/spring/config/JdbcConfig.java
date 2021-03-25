@@ -44,7 +44,7 @@ public class JdbcConfig {
 	public DataSource dataSource() {
 		HikariDataSource dataSource = new HikariDataSource();
 		dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		dataSource.setJdbcUrl("jdbc:sqlserver://localhost;databaseName=master");
+		dataSource.setJdbcUrl("jdbc:sqlserver://localhost:1433;databaseName=master");
 		dataSource.setUsername("sa");
 		dataSource.setPassword("password@123");
 		dataSource.setMaximumPoolSize(40);

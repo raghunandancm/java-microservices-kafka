@@ -78,3 +78,20 @@ public class ProductRepositoryImpl implements ProductRepository {
 	}
 
 }
+
+
+// JPA
+
+
+// JAVA Application
+
+// PERSISTENCE API
+
+// PERSISTENCE Provider (Hibernate)
+
+// JDBC Calls
+
+// PERSIST The DATA
+
+
+
