@@ -1,12 +1,18 @@
 package com.myapp.spring.model;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 // Persistent Class
@@ -34,6 +40,11 @@ public class Product {
 	
 	@Column(name = "STAR_RATING",nullable = false)
 	private double starRating;
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(joinColumns =@JoinColumn(name="PRODUCT_ID"),
+	inverseJoinColumns =@JoinColumn(name = "REVIEW_ID") ,name = "product_reviews" )
+	private Map<Integer, Review> reviews = new HashMap<>();
 	
 	
 	public Product() {
@@ -97,6 +108,18 @@ public class Product {
 
 	public void setStarRating(double starRating) {
 		this.starRating = starRating;
+	}
+	
+	
+
+
+	public Map<Integer, Review> getReviews() {
+		return reviews;
+	}
+
+
+	public void setReviews(Map<Integer, Review> reviews) {
+		this.reviews = reviews;
 	}
 
 
