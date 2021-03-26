@@ -76,3 +76,28 @@ public class JpaConfig {
 	
 
 }
+
+
+// Spring Boot = SpringCore + AutoConfiguration
+
+// Convention Over Configuration
+
+// Serverless Programming
+
+// Embedded Server inside Our application (Tomcat,Jetty)
+
+// Cloud Ready
+
+
+// Spring Cloud
+
+
+
+
+
+
+
+
+
+
+
