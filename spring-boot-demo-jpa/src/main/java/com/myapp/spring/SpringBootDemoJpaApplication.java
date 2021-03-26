@@ -23,7 +23,7 @@ public class SpringBootDemoJpaApplication {
 		SpringApplication.run(SpringBootDemoJpaApplication.class, args);
 	}
 	
-	@Bean
+	//@Bean
 	CommandLineRunner runner() {
 		return args -> {
 			
@@ -67,3 +67,10 @@ public class SpringBootDemoJpaApplication {
 // Step6 Starts The Embedded Tomcat Server
 
 // Step7 Application is ready for use
+
+
+// JAXRS (Jersey,RestEasy)
+
+// SpringWebservices
+
+
