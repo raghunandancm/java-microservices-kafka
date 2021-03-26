@@ -27,6 +27,10 @@ public class SpringBootDemoJpaApplication {
 	CommandLineRunner runner() {
 		return args -> {
 			
+//			repository.saveAll(Arrays.asList(new Product("Iphone", 48754.5, "Iphone12Pro", 3.9),
+//					new Product("Iphone", 58754.5, "Iphone11", 4.2),
+//					new Product("Iphone", 38754.5, "Iphone8", 3.9)));
+			
 			Product oneplusNord =repository.findById(1).get();
 			
 			Review review1 = new Review("My Comment3");
