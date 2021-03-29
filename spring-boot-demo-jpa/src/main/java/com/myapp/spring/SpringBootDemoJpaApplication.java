@@ -13,7 +13,7 @@ import com.myapp.spring.model.Product;
 import com.myapp.spring.model.Review;
 import com.myapp.spring.repository.ProductRepository;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class SpringBootDemoJpaApplication {
 	
 	@Autowired
